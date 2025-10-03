@@ -1,0 +1,23 @@
+/* Gaya kustom untuk memastikan latar belakang penuh */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FCF6F0; /* urap-cream */
+}
+
+/* Gaya untuk efek parallax ringan pada gambar utama */
+.parallax-bg {
+  background-image: url('https://placehold.co/6B9080/FFFFFF');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Efek hover pada tombol */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(52, 124, 94, 0.5), 0 4px 6px -2px rgba(52, 124, 94, 0.05);
+}

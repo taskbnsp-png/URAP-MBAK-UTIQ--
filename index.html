@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URAP MBAK UTIQ - Tradisi Rasa Nusantara</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Tailwind config (must load BEFORE the Tailwind CDN) -->
+  <script src="script.js"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-urap-dark">
+  <!-- HEADER / NAVIGATION -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+          <a href="#hero" class="text-2xl font-bold text-urap-green tracking-wider">
+              Urap <span class="text-urap-spice">Mbak Utiq</span>
+          </a>
+          <nav id="mainNav" class="hidden md:flex space-x-6 text-lg font-medium">
+              <a href="#menu" class="text-gray-600 hover:text-urap-green transition duration-300">Menu</a>
+              <a href="#keunggulan" class="text-gray-600 hover:text-urap-green transition duration-300">Mengapa Kami?</a>
+              <a href="#kontak" class="text-gray-600 hover:text-urap-green transition duration-300">Pesan</a>
+          </nav>
+          <button id="navToggle" class="md:hidden text-urap-dark focus:outline-none" aria-label="Buka menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+          </button>
+      </div>
+      <!-- Mobile dropdown -->
+      <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+          <div class="container mx-auto px-4 py-3 space-y-2">
+              <a href="#menu" class="block text-gray-700 hover:text-urap-green">Menu</a>
+              <a href="#keunggulan" class="block text-gray-700 hover:text-urap-green">Mengapa Kami?</a>
+              <a href="#kontak" class="block text-gray-700 hover:text-urap-green">Pesan</a>
+          </div>
+      </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="pt-16 pb-24 bg-urap-cream min-h-screen flex items-center">
+      <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+          <!-- Teks Utama -->
+          <div class="space-y-6">
+              <span class="text-xl font-semibold text-urap-spice uppercase tracking-widest block">Tradisi Rasa Nusantara</span>
+              <h1 class="text-5xl md:text-7xl font-extrabold text-urap-dark leading-tight">
+                  Segarnya <span class="text-urap-green">Urap</span>, <br>Nikmatnya <span class="text-urap-spice">Bumbu</span>
+              </h1>
+              <p class="text-xl text-gray-700">
+                  Urap Mbak Utiq menyajikan paduan sempurna dari sayuran kukus pilihan dan bumbu kelapa sangrai yang kaya rempah. Resep turun-temurun, rasa autentik.
+              </p>
+              <!-- Tombol Aksi Utama -->
+              <a href="#kontak" class="inline-block px-8 py-3 bg-urap-green text-white font-bold text-lg rounded-full shadow-lg btn-primary">
+                  Pesan Sekarang!
+              </a>
+          </div>
+          <!-- Gambar Hero (Placeholder) -->
+          <div class="hidden md:block">
+              <img src="https://placehold.co/600x450/347C5E/FCF6F0?text=Urap+Mbak+Utiq" 
+                   alt="Ilustrasi Urap Sayuran Segar" 
+                   class="w-full h-auto object-cover rounded-3xl shadow-2xl transform hover:scale-[1.02] transition duration-500"
+                   onerror="this.onerror=null;this.src='https://placehold.co/600x450/347C5E/FCF6F0?text=Urap+Mbak+Utiq'">
+          </div>
+      </div>
+  </section>
+
+  <!-- MENU / INGREDIENTS SECTION -->
+  <section id="menu" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center text-urap-dark mb-4">Pilihan Rasa Otentik Kami</h2>
+          <p class="text-center text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Kami menggunakan bahan-bahan terbaik untuk memastikan setiap gigitan terasa segar dan penuh gizi.</p>
+          
+          <div class="grid md:grid-cols-3 gap-8">
+              <!-- Item Menu 1: Urap Original -->
+              <div class="bg-urap-cream p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                  <div class="text-5xl mb-4 text-urap-green">🥦</div>
+                  <h3 class="text-2xl font-bold text-urap-dark mb-2">Urap Original Pedas Sedang</h3>
+                  <p class="text-gray-700 mb-4">Sayuran lengkap (kacang panjang, bayam, tauge, kangkung) dengan bumbu kelapa pedas sedang yang pas di lidah.</p>
+                  <span class="text-urap-spice font-extrabold text-xl">Rp 15.000,-</span>
+              </div>
+              
+              <!-- Item Menu 2: Bumbu Extra Pedas -->
+              <div class="bg-urap-cream p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                  <div class="text-5xl mb-4 text-urap-spice">🌶</div>
+                  <h3 class="text-2xl font-bold text-urap-dark mb-2">Level Mbak Utiq (Ekstra Pedas)</h3>
+                  <p class="text-gray-700 mb-4">Untuk pecinta tantangan! Bumbu kelapa dengan ekstra cabai rawit, dijamin bikin nagih. 🔥</p>
+                  <span class="text-urap-spice font-extrabold text-xl">Rp 16.500,-</span>
+              </div>
+
+              <!-- Item Menu 3: Porsi Keluarga -->
+              <div class="bg-urap-cream p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                  <div class="text-5xl mb-4 text-urap-green">🍚</div>
+                  <h3 class="text-2xl font-bold text-urap-dark mb-2">Paket Nasi & Urap Komplit</h3>
+                  <p class="text-gray-700 mb-4">Satu porsi nasi hangat, urap, telur rebus, dan rempeyek renyah. Paket kenyang dan bergizi.</p>
+                  <span class="text-urap-spice font-extrabold text-xl">Rp 22.000,-</span>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- KEUNGGULAN SECTION (WHY US) -->
+  <section id="keunggulan" class="py-20 parallax-bg bg-urap-green text-white bg-opacity-90">
+      <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold mb-4">Kenapa Harus Urap Mbak Utiq?</h2>
+          <p class="text-xl opacity-90 mb-12 max-w-3xl mx-auto">Kami berkomitmen pada kualitas, kesegaran, dan cita rasa warisan. Inilah janji kami:</p>
+          
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Keunggulan 1: Segar Setiap Hari -->
+              <div class="bg-white p-6 rounded-xl shadow-2xl text-urap-dark">
+                  <div class="text-4xl mb-3 text-urap-green">🌿</div>
+                  <h4 class="font-bold text-xl mb-2">Sayuran Pilihan</h4>
+                  <p class="text-sm">Dipetik dan diolah pada hari yang sama. Kualitas kesegaran yang terjamin.</p>
+              </div>
+              
+              <!-- Keunggulan 2: Bumbu Khas -->
+              <div class="bg-white p-6 rounded-xl shadow-2xl text-urap-dark">
+                  <div class="text-4xl mb-3 text-urap-spice">🥥</div>
+                  <h4 class="font-bold text-xl mb-2">Bumbu Kelapa Rahasia</h4>
+                  <p class="text-sm">Menggunakan resep turun-temurun, kelapa sangrai kering, gurih, dan tahan lama.</p>
+              </div>
+
+              <!-- Keunggulan 3: Higienis -->
+              <div class="bg-white p-6 rounded-xl shadow-2xl text-urap-dark">
+                  <div class="text-4xl mb-3 text-urap-green">✨</div>
+                  <h4 class="font-bold text-xl mb-2">Proses Higienis</h4>
+                  <p class="text-sm">Kebersihan adalah prioritas kami. Diolah di dapur yang bersih dan steril.</p>
+              </div>
+              
+              <!-- Keunggulan 4: Cocok Untuk Diet -->
+              <div class="bg-white p-6 rounded-xl shadow-2xl text-urap-dark">
+                  <div class="text-4xl mb-3 text-urap-spice">💪</div>
+                  <h4 class="font-bold text-xl mb-2">Sehat & Bergizi</h4>
+                  <p class="text-sm">Rendah kalori, kaya serat. Pilihan terbaik untuk makanan sehat Anda.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- CONTACT / CTA SECTION -->
+  <section id="kontak" class="py-20 bg-urap-cream">
+      <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-urap-dark mb-4">Tertarik Mencoba Kelezatannya?</h2>
+          <p class="text-xl text-gray-700 mb-8 max-w-xl mx-auto">Jangan tunda lagi! Hubungi kami untuk pemesanan dalam jumlah besar atau porsi harian Anda.</p>
+          
+          <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <!-- Tombol WhatsApp (Non-fungsional, hanya tampilan) -->
+              <a href="#" class="inline-block px-8 py-3 bg-urap-green text-white font-bold text-lg rounded-full shadow-lg btn-primary">
+                  📞 WhatsApp Mbak Utiq
+              </a>
+              <!-- Tombol Lihat Lokasi -->
+              <a href="#" class="inline-block px-8 py-3 bg-urap-spice text-white font-bold text-lg rounded-full shadow-lg transition duration-300 hover:bg-orange-600">
+                  📍 Cek Lokasi Kami
+              </a>
+          </div>
+          
+          <p class="mt-8 text-sm text-gray-500">Layanan pengiriman tersedia melalui aplikasi ojek online (Gojek/GrabFood).</p>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-urap-dark text-white py-6">
+      <div class="container mx-auto px-4 text-center text-sm">
+          <p>&copy; 2024 Urap Mbak Utiq. Dibuat dengan cinta dan bumbu rempah.</p>
+          <div class="mt-2 space-x-4">
+              <a href="#" class="hover:text-urap-green transition duration-300">Kebijakan Privasi</a>
+              <a href="#" class="hover:text-urap-green transition duration-300">Syarat & Ketentuan</a>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
